@@ -1,0 +1,17 @@
+// здесь прописываем все меги
+$url1 = 'http://192.168.18.110/state?c=get&n=';
+
+//Здесь прописываем объекты первого масива
+$arr1 = array(
+  '2E_Hall_r51.ID'  => 51,
+  'k.Denisa_r52.ID' => 52,
+  'k.Edika_r53.ID'  => 53,
+  'Spalnya_r62.ID'  => 62
+);
+
+include '/var/www/html/my_class.php';
+$a = new XrenClass($arr1, $url1);
+//Для включения
+//$a->arrOneXren();
+//Для выключения
+$a->arrNullXren();
