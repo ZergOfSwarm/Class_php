@@ -1,0 +1,16 @@
+// здесь прописываем IP меги
+$url1 = 'http://192.168.18.110/state?c=get&n=';
+
+//Здесь прописываем объекты второго этажа
+$arr1 = array(
+  '2E_Hall_r51.ID'  => 51,
+  'k_Denisa_r52.ID' => 52,
+  'k_Edika_r53.ID'  => 53
+);
+
+include '/var/www/html/my_class_econom.php';
+$a = new XrenClass($arr1, $url1);
+//Для включения
+//$a->arrOneSren();
+//Для выключения
+$a->arrNullXren();
